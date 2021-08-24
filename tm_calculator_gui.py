@@ -30,9 +30,9 @@ def main():
 		print("The Tm of the reverse primer is:",tm(rever),sep=" ")
 	elif program == 2:
 # calculate Tm of forward primer
-		print("The Tm of the forward primer is:",'%0.2f' % mt.Tm_NN(frwd, Na=50, Mg=1.5, dNTPs=0.6),sep=" ")
+		print("The Tm of the forward primer is:",'%0.2f' % mt.Tm_NN(frwd, Na=args['Na'], Mg=args['Mg'], dNTPs=args['dNTPs']),sep=" ")
 # calculate Tm of reverse primer
-		print("The Tm of the reverse primer is:",'%0.2f' % mt.Tm_NN(rever, Na=50, Mg=1.5, dNTPs=0.6),sep=" ")
+		print("The Tm of the reverse primer is:",'%0.2f' % mt.Tm_NN(rever, Na=args['Na'], Mg=args['Mg'], dNTPs=args['dNTPs']),sep=" ")
 
 if __name__ == '__main__':
 	main()
