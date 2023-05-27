@@ -1,11 +1,11 @@
-# tm_calculator_gui [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5248238.svg)](https://doi.org/10.5281/zenodo.5248238)
-Calculates the melting temperature of a user imported  forward and reverse primer. It chooses between 2 algorithms: 
-1. basic Tm calculation based on nucleotide content
-2. Nearest neighbor calculation based on salt concentration
-# **depedences:**  
-1. python3.8 or later
+# tm_calculator_gui
+Calculates the melting temperature of a user imported  forward and reverse primer based on the SantaLucia, 1998 salt correction formula used also in primer3 and primer blast. It can correct the tm calculation based on the existence of additives formamide & DMSO.
+## Windows and ubuntu linux GUI stadalone programs
+GUI executables are avaliable in: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7977708.svg)](https://doi.org/10.5281/zenodo.7977708)  
+## Citation
+Olga Tsiouri. (2023). Tm calculator GUI: Windows and ubuntu linux GUI apps that calculate the melting temperature of a user imported  forward and reverse primer based on primer blast default parameters. Zenodo. https://doi.org/10.5281/zenodo.7977708
+## Depedences
+1. python3.10
 2. anaconda/miniconda
-3. Gooey: `conda install -c conda-forge gooey`
-4. biopython: `conda install -c conda-forge biopython`
-## GUI stadalone program(.exe)
-A GUI executable is avaliable in: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5247205.svg)](https://doi.org/10.5281/zenodo.5247205)
+3. Gooey: `pip install Gooey`
+4. biopython: `pip install biopython`
